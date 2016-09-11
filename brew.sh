@@ -15,10 +15,26 @@ ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
-brew install findutils
-# Install GNU `sed`, overwriting the built-in `sed`.
+
+# Install GNU replacements, whenever possible
+# Source: https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/
+brew install binutils
+brew install diffutils
+brew install ed --with-default-names
+brew install findutils --with-default-names
+brew install gawk
+brew install gnu-indent --with-default-names
 brew install gnu-sed --with-default-names
+brew install gnu-tar --with-default-names
+brew install gnu-which --with-default-names
+brew install gnutls
+brew install grep --with-default-names
+brew install gzip
+brew install screen
+brew install watch
+brew install wdiff --with-gettext
+brew install wget
+
 # Install Bash 4.
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
@@ -43,10 +59,10 @@ brew install narwhal
 
 # Install more recent versions of some macOS tools.
 brew install vim --override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
-brew install tmux
+# brew install homebrew/dupes/grep
+brew install homebrew/dupes/openssh 
+# brew install homebrew/dupes/screen
+brew install tmux		
 brew install homebrew/php/php56 --with-gmp
 
 # Install font tools.

@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# ... Set Emacs.app (GNU Emacs for OS X binary) to be default emacs program
+# Source: http://emacsformacosx.com/
+alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
+alias emacsclient='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient'
+
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."

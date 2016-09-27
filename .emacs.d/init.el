@@ -183,8 +183,6 @@
   (setq org-capture-templates
         '(("t" "Todo" entry (file+headline "~/org/inbox.org" "Inbox")
            "* TODO %?\n%U\n  %i")
-          ("n" "Wellcentive meeting note"
-           entry (file+headline "~/org/wellcentive/wellcentive.org" "Meeting Notes") "* %? %U :note:\n  - Who: \n %i" :prepend t)
           ))
   
   ;; Refile settings
@@ -210,13 +208,10 @@
 	 ("\C-c l" . org-store-link)
 	 ("\C-c c" . org-capture)
 	 ("\C-c b" . org-iswitchb)
+	 ("C-8" . org-capture)
+	 ("C-9" . org-refile)
+	 ("C-0" . org-agenda))
 
-	 ;; (global-set-key "8" (quote org-capture))
-	 ;; (global-set-key "9" (quote org-refile))
-	 ;; (global-set-key "0" (quote org-agenda))
-	 ;; (global-set-key "8" (quote org-capture))
-	 ;; (global-set-key "9" (quote org-refile))
-	 )
   :config
   ;; Agenda
   (setq org-agenda-window-setup 'current-window)
